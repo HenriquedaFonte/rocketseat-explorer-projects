@@ -1,0 +1,139 @@
+body {
+  margin: 0;
+  min-height: 100vh;
+}
+
+.page {
+  width: 1000px;
+  margin: 0 auto ;
+  opacity: none;
+  padding-top: 65px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'Racing Sans One', cursive;
+}
+
+.logo {
+  width: 300px;
+  opacity: 80%;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  gap: 48px;
+  margin: 0;
+  padding: 0;
+  font-family: 'Racing Sans One', cursive;
+}
+
+ul li a {
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+ul li a:hover {
+  font-weight: bold;
+  opacity: 1;
+}
+
+h1 {
+  font-family: 'Racing Sans One', cursive;
+  font-size: 49px;
+  line-height: 56px;
+  font-weight: normal;
+  width: 490px;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.bg {
+  background-image: url("images/background.quadriculado.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;  
+  opacity: none;  
+}
+
+section p {
+  font-size: 14px;
+  line-height: 28px;
+  color: #000000b2;
+  margin: 40px 0;
+}
+
+button {
+  text-transform: uppercase;
+  color: white;
+  
+  background: #10a232;
+  border: none;
+  padding: 14px 25px 15px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
+  border-radius: 4px;
+  cursor: pointer;
+   
+}
+
+button:hover {
+  background: #0c8729;
+}
+
+.iconeBotao {
+  width: 20px;
+}
+
+footer {
+  font-size: 14px;
+  line-height: 28px;
+  text-align: center;
+  margin-top: 150px;
+}
+
+footer a {
+  
+  text-decoration: none;
+  color: black;
+  
+}
+
+footer a:hover {
+  font-weight: bold;
+}
+
+
+.icone {
+  width: 500px;
+}
+
+.history {
+  font-size: 20px;
+  justify-content: flex-end;
+}
+
+.fotos {
+  width: 418px;
+  display: flex;
+  gap: 400px;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-content: flex-end;
+
+}
+
+
