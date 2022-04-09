@@ -10,7 +10,7 @@ A way to document my journey as a WebDev aspirer 🚀
 
 ### 📌 Table of Contents
 
-- Project 1: [Introduction to HTML and CSS](./Project 01)
+- Project 1: [Introduction to HTML and CSS](./project-01)
 -
 
 <br/>
