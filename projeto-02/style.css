@@ -136,4 +136,17 @@ footer a:hover {
 
 }
 
+div .txtChamp {
+  font-size: 14px;
+  line-height: 28px;
+  color: #000000b2;
+  margin: 40px 0;
+  font-weight: bold;
+}
+
+.insc {
+  text-decoration: none;
+  color: black;
+}
+
 
