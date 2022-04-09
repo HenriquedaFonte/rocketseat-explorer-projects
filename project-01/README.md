@@ -17,4 +17,8 @@
 > Exercised HTML syntax, anatomy and elements while structuring the web page.
 >
 > Used CSS styling for font customization, text formatting, and element positioning according to the intended layout.
+
 🌱 **Stacks :** HTML | CSS
+
+
+
