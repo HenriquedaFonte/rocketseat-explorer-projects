@@ -6,8 +6,9 @@ body {
 }
 
 .page {
-width: 1083px;
+width: 1586px;
 }
+
 header {
   display: flex;
   width: 1083px;
@@ -37,7 +38,7 @@ ul li a {
 }
 
 main {
-  margin: 99px 101px 89px;
+  margin: 99px 183px 90px;
   display: flex;
   justify-items: center;
   justify-content: space-between;
@@ -77,9 +78,7 @@ p {
 
 footer{
   display: flex;
-  align-content: flex-start;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   margin-top: 157px;
 }
