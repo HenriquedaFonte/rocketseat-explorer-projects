@@ -5,6 +5,9 @@ body {
   
 }
 
+.page {
+width: 1083px;
+}
 header {
   display: flex;
   width: 1083px;
