@@ -19,14 +19,10 @@ ul {
   text-decoration: none;
   list-style: none;
   gap: 64px;
-  position: static;
   width: 68px;
-  height: 30.05px;
-  left: 115px;
   top: 0px;
   text-align: center;
   display: flex;
-
 }
 
 ul li a {
