@@ -9,7 +9,7 @@
 
 ⏳ **Status:** Finished
 
-🔗 **[See it online](https://henriquedafonte.github.io/rocketseat-explorer-project/)**
+🔗 **[See it online](https://henriquedafonte.github.io/rocketseat-explorer-project/project03)**
 
 
 👨‍💻 **Task:** Build a small business static website from a given Figma project.
