@@ -13,7 +13,7 @@ A way to document my journey as a WebDev aspirer 🚀
 - Project 1: [Introduction to HTML and CSS](./project01)
 - Project 2: [HTML and CSS](./project02)
 - Project 3: [Recreating Layout](./project03)
-- Project 4: [Form](./project04)
+- Project 4: [Form (Coding)](./project04)
 
 <br/>
 <br/>
