@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700&family=Poppins&display=swap" rel="stylesheet">
+  <title>Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="page">
+    <header>
+      <h1>Create and share your event.</h1>
+      <p>First step is to fill this application form.</p>
+    </header>
+    <form>
+      <fieldset>
+        <div class="fieldset-wrapper">
+          <legend>Event information</legend>
+          <div class="input-wrapper">
+            <label for="eventTitle">Event title <span>(minimum 8 characters)</span></label>
+            <input type="text" name="title" id="eventTitle" />
+          </div>
+          <div class="input-wrapper">
+            <label for="eventLink">Event link<span>(start with http://)</span> </label>
+            <input type="url" name="link" id="eventLink" />
+          </div>
+          <div class="input-wrapper">
+            <label for="contact">Contact phone number <span>(only numbers)</span></label>
+            <input type="tel" name="contact" id="contact" />
+          </div>
+          <div class="input-wrapper">
+            <label for="extraInformation">Extra information</label>
+            <textarea type="text" id="extraInformation"></textarea>
+          </div>
+          <div class="input-wrapper">
+            <label for="eventCategory">Event category</label>
+            <select>
+              <option></option>
+            </select>
+          </div>
+        </div>
+      </fieldset>
+      <div id="privacy">
+        <h2>Privacy</h2>
+        <div id="line"></div>
+        <label for="">Admin email <span>(enter a valid email address)</span></label>
+        <input type="email" name="email" id="email" />
+        <label for="">Guest access password</label>
+        <input type="password" name="pass" id="pass" />
+        <label for="">Private event</label>
+        <input type="checkbox" name="check" id="check" />
+      </div>
+      <div id="date">
+        <h2>Date and time</h2>
+        <div id="line"></div>
+        <label for="">Date</label>
+        <input type="date" name="date" id="date" />
+        <label for="">Beginning</label>
+        <input type="time" name="begTime" id="begTime" />
+        <label for="">End</label>
+        <input type="time" name="endTime" id="endTime" />
+      </div>
+      <div id="button">
+        <input type="submit" name="submit" id="submit" />
+      </div>
+    </form>
+  </div>
+</body>
+
+</html>
