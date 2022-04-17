@@ -10,9 +10,9 @@ A way to document my journey as a WebDev aspirer 🚀
 
 ### 📌 Table of Contents
 
-- Project 1: [Introduction to HTML and CSS](./project-01)
-- Project 2: [HTML and CSS](./projeto-02)
-- Project 3: [Recreating Layout](./Desafio04)
+- Project 1: [Introduction to HTML and CSS](./project01)
+- Project 2: [HTML and CSS](./project02)
+- Project 3: [Recreating Layout](./project03)
 
 <br/>
 <br/>
