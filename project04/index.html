@@ -34,37 +34,56 @@
             <input type="tel" name="contact" id="contact" />
           </div>
           <div class="input-wrapper">
-            <label for="extraInformation">Extra information</label>
-            <textarea type="text" id="extraInformation"></textarea>
+            <label for="extraInfo">Extra information</label>
+            <textarea type="text" id="extraInfo"></textarea>
           </div>
           <div class="input-wrapper">
             <label for="eventCategory">Event category</label>
-            <select>
-              <option></option>
+            <select id="eventCategory">
+              <option value="liveShow">Live show</option>
+              <option value="livePodcast">Live podcast</option>
+              <option value="openAirCinema">Open air cinema</option>
+              <option value="religiousEvent">Religious event</option>
             </select>
           </div>
         </div>
       </fieldset>
-      <div id="privacy">
-        <h2>Privacy</h2>
-        <div id="line"></div>
-        <label for="">Admin email <span>(enter a valid email address)</span></label>
-        <input type="email" name="email" id="email" />
-        <label for="">Guest access password</label>
-        <input type="password" name="pass" id="pass" />
-        <label for="">Private event</label>
-        <input type="checkbox" name="check" id="check" />
-      </div>
-      <div id="date">
-        <h2>Date and time</h2>
-        <div id="line"></div>
-        <label for="">Date</label>
-        <input type="date" name="date" id="date" />
-        <label for="">Beginning</label>
-        <input type="time" name="begTime" id="begTime" />
-        <label for="">End</label>
-        <input type="time" name="endTime" id="endTime" />
-      </div>
+      <fieldset>
+        <div class="fieldset-wrapper">
+          <legend>Privacy</legend>
+          <div class="input-wrapper">
+            <label for="email">Admin email <span>(enter a valid email address)</span></label>
+            <input type="email" name="email" id="email" />
+          </div>
+          <div class="input-wrapper">
+            <label for="pass">Guest access password</label>
+            <input type="password" name="pass" id="pass" />
+          </div>
+          <div class="input-wrapper" id="checkBox">
+            <input type="checkbox" name="check" id="check" />
+            <label for="check">Private event</label>            
+          </div>
+        </div>
+      </fieldset>
+      <fieldset>
+        <div class="fieldset-wrapper">
+          <legend>Date and time</legend>
+          <div class="dateTime" id="dateTime">
+            <div class="input-wrapper" id="teste">
+              <label for="date">Date</label>
+              <input type="date" name="date" id="date" />
+            </div>
+            <div class="input-wrapper">
+              <label for="begTime">Beginning</label>
+              <input type="time" name="begTime" id="begTime" />
+            </div>
+            <div class="input-wrapper">
+              <label for="endTime">End</label>
+              <input type="time" name="endTime" id="endTime" />
+            </div>
+          </div>
+        </div>
+      </fieldset>
       <div id="button">
         <input type="submit" name="submit" id="submit" />
       </div>
