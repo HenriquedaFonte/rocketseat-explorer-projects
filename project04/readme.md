@@ -5,9 +5,9 @@
 ---
 
       
-📅 **04.17.2022**
+📅 **04.18.2022**
 
-⏳ **Status:** Coding...
+⏳ **Status:** Finished
 
 🔗 **[See it online](https://henriquedafonte.github.io/rocketseat-explorer-projects/project04/)**
 
