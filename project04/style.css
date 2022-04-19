@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 
-body, input, button, select, textarea {
+body, input, select, textarea {
   font-family: 'Poppins', sans-serif;
 }
 
@@ -54,7 +54,7 @@ form {
   padding: 64px;
   margin-top: 38px;  
   background: #FAFAFC;
-  border-radius: 8px;
+  border-radius: 8px 8px 0px 0px;
   display: flex;
   flex-direction: column;
   gap: 48px;
@@ -96,7 +96,8 @@ fieldset legend {
   gap: 8px;
 }
 
-.input-wrapper label {
+.input-wrapper label,
+.checkBox-wrapper label {
   font-size: 14px;
   line-height: 24px;
   color: #4E4958;
@@ -134,21 +135,43 @@ fieldset legend {
   height: 168px;
 }
 
- #checkBox {
-  display: flex;
-  flex-direction: row;
-  align-items:center;
-  gap: 16px;
+.checkBox-wrapper {
+  position: relative;
 }
 
-#check {
+/*deixando o checkbox original, oculto*/
+.checkBox-wrapper input {
+  position: absolute;
   Width: 24px;
   Height: 24px;
-  appearance: none;
-  background-image: url("data:image/svg+xml,%3Csvg width='26' height='26' viewBox='0 0 26 26' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='1' y='1' width='24' height='24' rx='8' fill='%23FAFAFC' stroke='%23E6E6F0'/%3E%3C/svg%3E%0A");
-  background-repeat: no-repeat;
-  background-position:left center;
-  border: none;
+  opacity: 0;
+}
+
+.checkBox-wrapper label {
+  display: flex;
+  align-items:center;
+  gap: 16px;
+  margin: 0;
+}
+
+.checkBox-wrapper label::before {
+  content: '';
+  Width: 24px;
+  Height: 24px;
+  display: block;
+  border: 1px solid #E6E6F0;
+  border-radius: 8px;
+}
+
+/*label::before cria um objeto antes do label*/
+.checkBox-wrapper input:checked + label::before {
+  background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M9 16.17L4.83 12L3.41 13.41L9 19L21 7L19.59 5.59L9 16.17Z' fill='%2342D3FF'/%3E%3C/svg%3E%0A");
+}
+
+/* Criando uma borda ao selecionar o objeto*/
+/*focus e quando o objeto esta selecionado*/
+.checkBox-wrapper input:focus + label::before {
+  outline: 2px solid black;
 }
 
 #dateTime {
@@ -157,17 +180,54 @@ fieldset legend {
   gap: 20px;
 }
 
-#date {
-  width: 312px;
-  height: 56px;
+#dt{
+  width: 100%;
 }
 
-#begTime {
-  width: 128px;
-  height: 56px;
+.separator{
+  width: 736px;
+  height: 0px;
+  left: 351px;
+  top: 1713px;  
+  border: 1px solid #D6D6D6;
 }
 
-#endTime {
-  width: 128px;
-  height: 56px;
+footer {
+  background: #F0F0F4;
+  border-radius: 0px 0px 8px 8px;
+  height: 136px;  
+  display: flex;
+  flex-direction: column;
+  padding: 40px 64px;
+  margin-bottom: 100px;
 }
+
+footer .save {
+  height: 56px;
+  background: #04D361;
+  font-family: 'Archivo';
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 26px;
+  color: #FFFFFF;
+  border-radius: 8px;
+  border: 0;
+}
+/*hover e a propriedade de quando o mouse passa sobre o objeto*/
+footer .save:hover {
+  background: #059646;
+}
+
+
+/*invalid e a propriedade de quando o campo e invalido*/
+input:invalid {
+  border: 1px solid #ff1010;
+}
+
+
+
+
+
+
+
+

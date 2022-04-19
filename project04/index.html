@@ -17,21 +17,21 @@
       <h1>Create and share your event.</h1>
       <p>First step is to fill this application form.</p>
     </header>
-    <form>
+    <form id="myForm">
       <fieldset>
         <div class="fieldset-wrapper">
           <legend>Event information</legend>
           <div class="input-wrapper">
             <label for="eventTitle">Event title <span>(minimum 8 characters)</span></label>
-            <input type="text" name="title" id="eventTitle" />
+            <input required minlength="8" type="text" name="title" id="eventTitle" />
           </div>
           <div class="input-wrapper">
             <label for="eventLink">Event link<span>(start with http://)</span> </label>
-            <input type="url" name="link" id="eventLink" />
+            <input required type="url" name="link" id="eventLink" />
           </div>
           <div class="input-wrapper">
             <label for="contact">Contact phone number <span>(only numbers)</span></label>
-            <input type="tel" name="contact" id="contact" />
+            <input required type="number" name="contact" id="contact" />
           </div>
           <div class="input-wrapper">
             <label for="extraInfo">Extra information</label>
@@ -53,13 +53,13 @@
           <legend>Privacy</legend>
           <div class="input-wrapper">
             <label for="email">Admin email <span>(enter a valid email address)</span></label>
-            <input type="email" name="email" id="email" />
+            <input required type="email" name="email" id="email" />
           </div>
           <div class="input-wrapper">
-            <label for="pass">Guest access password</label>
-            <input type="password" name="pass" id="pass" />
+            <label for="pass">Guest access password <span>(minimum 8 characters)</span></label>
+            <input required minlength="8" type="password" name="pass" id="pass" />
           </div>
-          <div class="input-wrapper" id="checkBox">
+          <div class="checkBox-wrapper">
             <input type="checkbox" name="check" id="check" />
             <label for="check">Private event</label>            
           </div>
@@ -69,25 +69,27 @@
         <div class="fieldset-wrapper">
           <legend>Date and time</legend>
           <div class="dateTime" id="dateTime">
-            <div class="input-wrapper" id="teste">
+            <div class="input-wrapper" id="dt">
               <label for="date">Date</label>
-              <input type="date" name="date" id="date" />
+              <input required type="date" name="date" id="date" />
             </div>
             <div class="input-wrapper">
               <label for="begTime">Beginning</label>
-              <input type="time" name="begTime" id="begTime" />
+              <input required type="time" name="begTime" id="begTime" />
             </div>
             <div class="input-wrapper">
               <label for="endTime">End</label>
-              <input type="time" name="endTime" id="endTime" />
+              <input required type="time" name="endTime" id="endTime" />
             </div>
           </div>
         </div>
       </fieldset>
-      <div id="button">
-        <input type="submit" name="submit" id="submit" />
-      </div>
+
     </form>
+    <div class="separator"></div>
+    <footer>
+      <input type="submit" value="Save event" name="submit" class="save" form="myForm" />
+    </footer>
   </div>
 </body>
 
