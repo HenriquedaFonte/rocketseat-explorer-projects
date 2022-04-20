@@ -1,6 +1,6 @@
 # 👨‍🚀 RocketSeat's Explorer coursework projects
 
-### Stage 03 - Form
+### Stage 03 - Responsive website
 
 ---
 
@@ -9,7 +9,7 @@
 
 ⏳ **Status:** Coding...
 
-🔗 **[See it online](https://henriquedafonte.github.io/rocketseat-explorer-projects/project04/)**
+🔗 **[See it online](https://henriquedafonte.github.io/rocketseat-explorer-projects/project05/)**
 
 
 👨‍💻 **Task:** Build a small business static website from a given Figma project.
