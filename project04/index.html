@@ -22,16 +22,16 @@
         <div class="fieldset-wrapper">
           <legend>Event information</legend>
           <div class="input-wrapper">
-            <label for="eventTitle">Event title <span>(minimum 8 characters)</span></label>
-            <input required minlength="8" type="text" name="title" id="eventTitle" />
+            <label for="eventTitle">Event title <span>(minimum 8 characters)</span><span class="red">*</span></label>
+            <input required minlength="8" type="text" name="title" placeholder=" " id="eventTitle" />
           </div>
           <div class="input-wrapper">
-            <label for="eventLink">Event link<span>(start with http://)</span> </label>
-            <input required type="url" name="link" id="eventLink" />
+            <label for="eventLink">Event link<span>(start with http://)</span><span class="red">*</span></label>
+            <input required type="url" name="link" placeholder=" " id="eventLink" />
           </div>
           <div class="input-wrapper">
-            <label for="contact">Contact phone number <span>(only numbers)</span></label>
-            <input required type="number" name="contact" id="contact" />
+            <label for="contact">Contact phone number <span>(only numbers)</span><span class="red">*</span></label>
+            <input required type="number" name="contact" placeholder=" " id="contact" />
           </div>
           <div class="input-wrapper">
             <label for="extraInfo">Extra information</label>
@@ -40,6 +40,7 @@
           <div class="input-wrapper">
             <label for="eventCategory">Event category</label>
             <select id="eventCategory">
+              <option value="">Select an option</option>
               <option value="liveShow">Live show</option>
               <option value="livePodcast">Live podcast</option>
               <option value="openAirCinema">Open air cinema</option>
@@ -52,12 +53,12 @@
         <div class="fieldset-wrapper">
           <legend>Privacy</legend>
           <div class="input-wrapper">
-            <label for="email">Admin email <span>(enter a valid email address)</span></label>
-            <input required type="email" name="email" id="email" />
+            <label for="email">Admin email <span>(enter a valid email address)</span><span class="red">*</span></label>
+            <input required type="email" name="email" placeholder=" " id="email" />
           </div>
           <div class="input-wrapper">
-            <label for="pass">Guest access password <span>(minimum 8 characters)</span></label>
-            <input required minlength="8" type="password" name="pass" id="pass" />
+            <label for="pass">Guest access password <span>(minimum 8 characters)</span><span class="red">*</span></label>
+            <input required minlength="8" type="password" name="pass" placeholder=" " id="pass" />
           </div>
           <div class="checkBox-wrapper">
             <input type="checkbox" name="check" id="check" />
@@ -70,15 +71,15 @@
           <legend>Date and time</legend>
           <div class="dateTime" id="dateTime">
             <div class="input-wrapper" id="dt">
-              <label for="date">Date</label>
+              <label for="date">Date<span class="red">*</span></label>
               <input required type="date" name="date" id="date" />
             </div>
             <div class="input-wrapper">
-              <label for="begTime">Beginning</label>
+              <label for="begTime">Beginning<span class="red">*</span></label>
               <input required type="time" name="begTime" id="begTime" />
             </div>
             <div class="input-wrapper">
-              <label for="endTime">End</label>
+              <label for="endTime">End<span class="red">*</span></label>
               <input required type="time" name="endTime" id="endTime" />
             </div>
           </div>
