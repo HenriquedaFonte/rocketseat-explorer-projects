@@ -224,9 +224,9 @@ footer .save:hover {
 
 
 /*invalid e a propriedade de quando o campo e invalido*/
-input:invalid {
+/*input:invalid {
   border: 1px solid #ff1010;
-}
+}*/
 
 input:not(:focus):not(:placeholder-shown):invalid {
   border: 1px solid #F01414;
