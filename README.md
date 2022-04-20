@@ -14,6 +14,7 @@ A way to document my journey as a WebDev aspirer 🚀
 - Project 2: [HTML and CSS](./project02)
 - Project 3: [Recreating Layout](./project03)
 - Project 4: [Form](./project04)
+- Project 5: [Responsive website](./project05)
 
 <br/>
 <br/>
