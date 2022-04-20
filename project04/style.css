@@ -108,6 +108,10 @@ fieldset legend {
   margin-left: 12px;
 }
 
+.red {
+  color: #f01f26;
+}
+
 .input-wrapper input, 
 .input-wrapper textarea,
 .input-wrapper select {
@@ -224,7 +228,21 @@ input:invalid {
   border: 1px solid #ff1010;
 }
 
+input:not(:focus):not(:placeholder-shown):invalid {
+  border: 1px solid #F01414;
+}
 
+input:not(:focus):not(:placeholder-shown):valid {
+  border: 1px solid #56E556;
+}
+
+select:valid, textarea:not(:placeholder-shown):valid {
+  border: 1px solid #56E556;
+}
+
+select, input::placeholder {
+  color: #C1BCCC;
+}
 
 
 
