@@ -108,6 +108,10 @@ fieldset legend {
   margin-left: 12px;
 }
 
+.red {
+  color: #f01f26;
+}
+
 .input-wrapper input, 
 .input-wrapper textarea,
 .input-wrapper select {
@@ -159,7 +163,7 @@ fieldset legend {
   Width: 24px;
   Height: 24px;
   display: block;
-  border: 1px solid #E6E6F0;
+  border: 1px solid #cbcbd6;
   border-radius: 8px;
 }
 
@@ -220,11 +224,25 @@ footer .save:hover {
 
 
 /*invalid e a propriedade de quando o campo e invalido*/
-input:invalid {
+/*input:invalid {
   border: 1px solid #ff1010;
+}*/
+
+input:not(:focus):not(:placeholder-shown):invalid {
+  border: 2px solid #F01414;
 }
 
+input:not(:focus):not(:placeholder-shown):valid {
+  border: 2px solid #56E556;
+}
 
+select:valid, textarea:not(:placeholder-shown):valid {
+  border: 2px solid #56E556;
+}
+
+select, input::placeholder {
+  color: #C1BCCC;
+}
 
 
 
