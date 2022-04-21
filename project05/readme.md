@@ -12,7 +12,7 @@
 🔗 **[See it online](https://henriquedafonte.github.io/rocketseat-explorer-projects/project05/)**
 
 
-👨‍💻 **Task:** Build a small business static website from a given Figma project.
+👨‍💻 **Task:** Build a small business static website from a given [Figma model](https://www.figma.com/file/sKWePDyLi3TtGphphy6tYk/Explorer-Stage-03-Projeto-03/duplicate).
 
 > Exercised HTML syntax, anatomy, text alignment, spacing, border and sorting elements, CSS flexbox, box model, button, backgound 
 > and elements while structuring the web page.
