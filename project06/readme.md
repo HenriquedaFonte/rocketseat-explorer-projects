@@ -5,7 +5,7 @@
 ---
 
       
-📅 **04.19.2022**
+📅 **04.20.2022**
 
 ⏳ **Status:** finished
 
@@ -15,6 +15,8 @@
 👨‍💻 **Task:** Build a small fan site using Embedding the image and superimposing the text, Transitions and transformations, Animations with CSS and Desktop Version with CSS Grid.
 
 > Exercised HTML syntax, anatomy, text alignment, spacing, border and sorting elements, CSS flexbox, box model, button, backgound, grid, transition, transform and elements while structuring the web page.
+>
+>Using for the first time the concept of variables in CSS.
 >
 > Creating a responsive page, flexible measurement unit rules, mobile first.
 >
