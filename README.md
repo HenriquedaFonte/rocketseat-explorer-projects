@@ -15,6 +15,7 @@ A way to document my journey as a WebDev aspirer 🚀
 - Project 3: [Recreating Layout](./project03)
 - Project 4: [Form](./project04)
 - Project 5: [Responsive website](./project05)
+- Project 6: [Responsive website W/Grid](./project06)
 
 <br/>
 <br/>
