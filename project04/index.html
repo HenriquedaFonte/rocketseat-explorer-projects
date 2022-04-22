@@ -39,8 +39,8 @@
           </div>
           <div class="input-wrapper">
             <label for="eventCategory">Event category</label>
-            <select placeholder=" " id="eventCategory">
-              <option value="" disabled selected hidden>Select an option</option>
+            <select id="type" required oninput='style.color="#6e6d72"'>
+              <option value="" disabled selected hidden>Selecione uma opção...</option>
               <option value="liveShow">Live show</option>
               <option value="livePodcast">Live podcast</option>
               <option value="openAirCinema">Open air cinema</option>
@@ -72,7 +72,7 @@
           <div class="dateTime" id="dateTime">
             <div class="input-wrapper" id="dt">
               <label for="date">Date<span class="red">*</span></label>
-              <input required type="date" name="date" placeholder=" " id="date" />
+              <input required type="date" name="date"  id="date" />
             </div>
             <div class="input-wrapper">
               <label for="begTime">Beginning<span class="red">*</span></label>
