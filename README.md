@@ -29,6 +29,6 @@ A way to document my journey as a WebDev aspirer 🚀
 
 #### 🧰 Stacks practised
 
-<img src="https://img.shields.io/badge/CSS3-381480?style=flat&logo=css3" alt="css3 Badge" height="22">&nbsp;
-<img src="https://img.shields.io/badge/HTML5-381480?style=flat&logo=html5" alt="html5 Badge" height="22">&nbsp;
+<img src="https://img.shields.io/badge/Css3-374449?style=flat&logo=css3" alt="css3 Badge" height="25">&nbsp;
+<img src="https://img.shields.io/badge/Html5-374449?style=flat&logo=html5" alt="html5 Badge" height="25">&nbsp;
 <img src="https://img.shields.io/badge/Javascript-374449?style=flat&logo=javascript" alt="javascript Badge" height="25">&nbsp;
