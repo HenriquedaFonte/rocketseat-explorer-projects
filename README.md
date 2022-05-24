@@ -16,6 +16,7 @@ A way to document my journey as a WebDev aspirer 🚀
 - Project 4: [Form](./project04)
 - Project 5: [Responsive website](./project05)
 - Project 6: [Responsive website W/Grid](./project06)
+- Project 7: [Focus timer - clock](./project09)
 
 <br/>
 <br/>
@@ -25,7 +26,7 @@ A way to document my journey as a WebDev aspirer 🚀
 
 #### Status: 🚧 In progress
 
-<p style="color:#381480"> ██▁▁▁▁▁▁▁▁ &nbsp;20% </p>
+<p style="color:#381480"> ████▁▁▁▁▁▁ &nbsp;40% </p>
 
 #### 🧰 Stacks practised
 
