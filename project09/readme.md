@@ -1,22 +1,29 @@
 
 👨‍🚀 RocketSeat's Explorer coursework projects
-Stage 03 - Responsive website with GRID
-📅 04.20.2022
+Stage 05 - 
+📅 05.24.2022
 
 ⏳ Status: finished
 
-🔗 See it online
+🔗 **[See it online](https://henriquedafonte.github.io/rocketseat-explorer-projects/project09/)**
 
-👨‍💻 Task: Build a small fan site using Embedding the image and superimposing the text, Transitions and transformations, Animations with CSS and Desktop Version with CSS Grid.
+👨‍💻 Task: Build a "pomodoro" timer from a **[figma](https://www.figma.com/file/jrp8xKSeooL8uwmXPUPrBI/Explorer-Stage-05-Projeto-01/duplicate)** project.
 
-Exercised HTML syntax, anatomy, text alignment, spacing, border and sorting elements, CSS flexbox, box model, button, backgound, grid, transition, transform and elements while structuring the web page.
+Continuing to learn CSS and HTML and now starting to use JavaScript.
 
-Using for the first time the concept of variables in CSS.
+Introduction to the Browser DOM
 
-Creating a responsive page, flexible measurement unit rules, mobile first.
+Event-driven, imperative programming and callbacks
 
-Used CSS styling for font customization, text formatting, and element positioning according to the intended layout.
+Refactoring for the new features
+
+Clean Code Principles and Declarative Programming
+
+Introduction to ES6 Modules
+
+Creating objects with the Factory pattern and dependency injection
+
 
 🌱 Stacks : HTML | CSS | JavaScript
 
-https://henriquedafonte.github.io/rocketseat-explorer-projects/project09/
+
