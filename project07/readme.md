@@ -5,7 +5,7 @@ Stage 05 -
 
 ⏳ Status: finished
 
-🔗 **[See it online](https://henriquedafonte.github.io/rocketseat-explorer-projects/project09/)**
+🔗 **[See it online](https://henriquedafonte.github.io/rocketseat-explorer-projects/project07/)**
 
 👨‍💻 Task: Build a "pomodoro" timer from a given **[figma](https://www.figma.com/file/jrp8xKSeooL8uwmXPUPrBI/Explorer-Stage-05-Projeto-01/duplicate)** project.
 
