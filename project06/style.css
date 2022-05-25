@@ -40,6 +40,7 @@ main {
 
 .page {
   max-width: 33rem;
+  max-height: 100%;
   margin: 0 auto;
 }
 
@@ -166,7 +167,7 @@ header h1 {
 @media (min-width: 1000px) {
   main {
 
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: auto;
 
     grid-template-areas: "A B B"
       "C C D";
