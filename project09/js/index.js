@@ -1,21 +1,8 @@
-//Minha solucao
-// function play() {
-//   const pause = document.querySelector('.pause')
-//   const play = document.querySelector('.play')
-//   play.classList.add('hide')
-//   pause.classList.remove('hide')
-// }
-
-// function pause() {
-//   const pause = document.querySelector('.pause')
-//   const play = document.querySelector('.play')
-//   pause.classList.add('hide')
-//   play.classList.remove('hide')
-// }
 
 import Controls from "./controls.js"
 import Timer from "./timer.js"
 import Sounds from "./sounds.js"
+import Events from "./events.js"
 import { 
   buttonPause,
   buttonPlay,
@@ -26,8 +13,6 @@ import {
   displayMinutes,
   displaySeconds
  } from "./elements.js"
-
-//solucao Mayk
 
 
 let minutes = Number(displayMinutes.textContent)
@@ -50,42 +35,6 @@ const timer = Timer ({
 
 const sound = Sounds()
 
-buttonPlay.addEventListener('click', function () {
-  controls.play()
-  timer.countDown()
-  sound.pressButton()
-})
+Events({controls, timer, sound})
 
-buttonPause.addEventListener('click', function () {
-  controls.pause()
-  timer.pause() 
-  sound.pressButton()
-})
 
-buttonStop.addEventListener('click', function () {
-  controls.reset()
-  timer.reset()
-  sound.pressButton()
-})
-
-buttonSoundOn.addEventListener('click', function () {
-  controls.soundOn()
-  sound.bgAudio.play()
-})
-
-buttonSoundOff.addEventListener('click', function () {
-  controls.soundOff()
-  sound.bgAudio.pause()
-})
-
-buttonSet.addEventListener('click', function () {
-  let newMinutes = controls.getMinutes()
-  if (!newMinutes) {
-    timer.reset()
-    return
-  }
- 
-  
-  timer.updateDisplay(newMinutes, 0)
-  timer.minutesUpdate(newMinutes)
-})

@@ -156,6 +156,7 @@ header h1 {
     grid-template-columns: 1fr 1fr;
   }
 
+
   .page {
     max-width: 170rem;
     padding: 0 5rem;
@@ -164,7 +165,9 @@ header h1 {
 
 @media (min-width: 1000px) {
   main {
-    /*nomeando colunas*/
+   
+    grid-template-columns: auto;
+
    grid-template-areas: "A B B"
    "C C D" ;
    }
