@@ -7,7 +7,7 @@ Stage 05 -
 
 🔗 **[See it online](https://henriquedafonte.github.io/rocketseat-explorer-projects/project08/)**
 
-👨‍💻 Task: Build a "pomodoro" timer from a given **[figma](https://www.figma.com/file/jrp8xKSeooL8uwmXPUPrBI/Explorer-Stage-05-Projeto-01/duplicate)** project.
+👨‍💻 Task: Build a "pomodoro" timer from a given **[figma](https://www.figma.com/file/5zNNYvasyUQxL11DkkXEuW/Stage-05---Focus-Timer-2.0-(Copy)?node-id=0%3A1)** project.
 
 Continuing to learn CSS and HTML and now starting to use JavaScript.
 
