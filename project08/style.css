@@ -250,6 +250,10 @@ button svg path {
 /*==================================== MEDIA ============================*/
 
 @media (max-width: 600px) {
+  body {
+    min-height: 55vh;
+  }
+  
   #page{
     width: 100%;
     justify-items: center;
@@ -267,8 +271,8 @@ button svg path {
     right: 3rem;
   }
 
-  body {
-    min-height: 55vh;
+  .card:hover {
+    transform: none;
   }
 
 }
