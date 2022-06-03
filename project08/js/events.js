@@ -9,39 +9,54 @@ import {
   buttonPlay,
   buttonRain,
   buttonStop,
-  minutesDisplay
+  minutesDisplay,
+  buttonLight,
+  buttonDark,
+  clickButtonForrest,
+  clickButtonCafeteria,
+  clickButtonFireplace,
+  clickButtonRain,
+  volumeCafeteria,
+  volumeFireplace,
+  volumeForrest,
+  volumeRain
+  
 } from "./elements.js"
 
 export default function Event({controls, timer, sound}){
 
-  buttonForrest.addEventListener('click', function () {    
+  clickButtonForrest.addEventListener('click', function () {    
     controls.activeForrest()
     sound.resetAudio()
     if (buttonForrest.classList.contains('active')) {
+      sound.setVolume()
       sound.forrestAudioPlay();
     }  
   })
   
-  buttonRain.addEventListener('click', function () {
+  clickButtonRain.addEventListener('click', function () {
     controls.activeRain()
     sound.resetAudio()
        if (buttonRain.classList.contains('active')) {
-      sound.rainAudioPlay();
+        sound.setVolume()
+        sound.rainAudioPlay();      
     } 
   })
   
-  buttonCafeteria.addEventListener('click', function () {
+  clickButtonCafeteria.addEventListener('click', function () {     
     controls.activeCafeteria()
     sound.resetAudio()
     if (buttonCafeteria.classList.contains('active')) {
+      sound.setVolume()
       sound.cafeteriaAudioPlay();
     }   
   })
   
-  buttonFireplace.addEventListener('click', function () {
+  clickButtonFireplace.addEventListener('click', function () {
     controls.activeFireplace()
     sound.resetAudio()
     if (buttonFireplace.classList.contains('active')) {
+      sound.setVolume()
       sound.fireplaceAudioPlay();
     } 
    })
@@ -73,4 +88,27 @@ export default function Event({controls, timer, sound}){
     }
   })
 
+  volumeCafeteria.addEventListener('mousemove', function(){    
+    sound.audioCafeteria.volume = this.value;
+  })
+
+  volumeRain.addEventListener('mousemove', function(){    
+    sound.audioRain.volume = this.value;
+  })
+
+  volumeForrest.addEventListener('mousemove', function(){    
+    sound.audioForrest.volume = this.value;
+  })
+
+  volumeFireplace.addEventListener('mousemove', function(){    
+    sound.audioFireplace.volume = this.value;
+  })
+
+  buttonDark.addEventListener('click', function(){
+    controls.setDark()
+  })
+
+  buttonLight.addEventListener('click', function(){
+    controls.setLight()
+  })
 }

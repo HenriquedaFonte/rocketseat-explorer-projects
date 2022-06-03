@@ -7,11 +7,22 @@
 :root {
   font-size: 62.5%;
 
-  --primary-color: #323238;
-  --secundary-color: #E1E1E6;
-  --secundary-color-light: #E5E5E5;
-  --btn-hover-color: #02799D;
+  --bg-color: hsl(0, 0%, 100%);
+  --font-color: hsl(0, 0%, 0%);
+  --primary-color: hsl(0, 0%, 0%);
+  --secundary-color: hsl(0, 0%, 89%);
+  --secundary-color-light: hsl(0, 0%, 100%);
+  --btn-hover-color: hsl(194, 97%, 31%);
 
+}
+
+.dark {
+  --bg-color: hsl(240, 5%, 7%);
+  --secundary-color: hsl(240, 9%, 89%);
+  --secundary-color-light: hsl(0, 0%, 100%);
+  --btn-hover-color: hsl(195, 74%, 15%);
+  --font-color: hsl(0, 0%, 100%);
+  --primary-color: hsl(0, 0%, 100%);
 }
 
 /*============================== GENERAL ====================================*/
@@ -19,13 +30,21 @@
 body {
   display: grid;
   min-height: 100vh;
-  background-color: #ffffff;
+  background-color: var(--bg-color);  
 }
 
 button {
   cursor: pointer;
 }
 
+#theme {
+  position: absolute;
+  top: 6rem;
+  right: 6rem;
+  border: none;
+  background-color: transparent;
+  z-index: 2;
+}
 
 /*================================ CLASS BASE ===============================*/
 
@@ -33,19 +52,18 @@ button {
   display: none;
 }
 
-.active,
-.active svg path {
-  background-color: var(--btn-hover-color);
-  fill: var(--secundary-color);
-
+.active {
+  --secundary-color: var(--btn-hover-color);
+  background-color: var(--secundary-color-light)
 }
 
 .clickedForrest .controls,
 .clickedForrest .timer,
-.clickedForrest svg path {
+.clickedForrest .forrest svg path,
+.clickedForrest .controls svg path {
   background-color: rgba(0, 0, 0, 0.582);
-  color: white;
-  fill: white;
+  color: var(--secundary-color-light);
+  fill: var(--secundary-color-light);
 
 }
 
@@ -62,10 +80,11 @@ button {
 
 .clickedRain .controls,
 .clickedRain .timer,
-.clickedRain svg path {
+.clickedRain .rain svg path,
+.clickedRain .controls svg path {
   background-color: rgba(0, 0, 0, 0.582);
-  color: white;
-  fill: white;
+  color: var(--secundary-color-light);
+  fill: var(--secundary-color-light);
 }
 
 .clickedRain#page {
@@ -81,10 +100,11 @@ button {
 
 .clickedCafeteria .controls,
 .clickedCafeteria .timer,
-.clickedCafeteria svg path {
+.clickedCafeteria .cafeteria svg path,
+.clickedCafeteria .controls svg path {
   background-color: rgba(0, 0, 0, 0.582);
-  color: white;
-  fill: white;
+  color: var(--secundary-color-light);
+  fill: var(--secundary-color-light);
 }
 
 .clickedCafeteria#page {
@@ -93,7 +113,6 @@ button {
   background-position: center;
   border-radius: 3rem;
 
-
   transition: 300ms;
 
   transform: scale(1);
@@ -101,10 +120,11 @@ button {
 
 .clickedFireplace .controls,
 .clickedFireplace .timer,
-.clickedFireplace svg path {
+.clickedFireplace .fireplace svg path,
+.clickedFireplace .controls svg path {
   background-color: rgba(0, 0, 0, 0.582);
-  color: white;
-  fill: white;
+  color: var(--secundary-color-light);
+  fill: var(--secundary-color-light);
 }
 
 .clickedFireplace#page {
@@ -118,16 +138,26 @@ button {
   transform: scale(1);
 }
 
+/*================================ THEME ===============================*/
+.changeMode {
+  position: absolute;
+  top: 6rem;
+  right: 6rem;
+}
+
+.changeMode button {
+  border: none;
+  background: transparent;
+}
 /*================================ TIMER ===============================*/
 
 #page {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  flex-direction: row;
   justify-self: center;
   align-self: center;
   gap: clamp(4rem, 2rem + 10vw, 19.2rem);
-  width: 82rem;
+  width: clamp(73rem, 84rem + 2vw, 140rem);
   height: 33.6rem;
 }
 
@@ -149,7 +179,11 @@ button {
   font-weight: 500;
   font-size: clamp(8rem, 10rem + 10vw, 12.6rem);
   line-height: 14.8rem;
+  color: var(--font-color)
+}
 
+.controls svg path{
+  fill: var(--font-color)
 }
 
 .controls {
@@ -171,21 +205,67 @@ button {
   display: grid;
   grid-template-columns: 1fr 1fr;
   justify-self: end;
+  align-items: center;
   gap: 2.2rem;
   width: 30.1rem;
   height: 33.6rem;
-
+  
 }
 
-#sound button {
-  /* background-color: var(--secundary-color-light); */
-  align-self: center;
+.card {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--secundary-color);
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
   border: none;
   border-radius: 2.4rem;
   width: 13.8rem;
   height: 15.2rem;
 }
 
-#sound button:hover {
+.card button {
+ background: none;
+ border: none;
+}
+
+.card:hover {
   transform: scale(1.1);
 }
+
+.card input {  
+  border: none;
+  width: 8rem;
+  height: 0.3rem;
+  border-radius: 50%;
+
+}
+
+button svg path {
+  fill: var(--font-color)
+}
+
+
+/*==================================== MEDIA ============================*/
+
+@media (max-width: 600px) {
+  #page{
+    width: 70%;
+    justify-items: center;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    gap: 10rem;
+  }
+
+  #sound {
+    justify-self: center;   
+  }
+
+  .changeMode {
+    top: 3rem;
+    right: 3rem;
+  }
+
+}
+

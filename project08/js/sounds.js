@@ -1,39 +1,52 @@
 export default function Sounds() {
-  const buttonPressAudioForrest = new Audio('./audio/Floresta.wav')
-  const buttonPressAudioRain = new Audio('./audio/Chuva.wav')
-  const buttonPressAudioCafeteria = new Audio('./audio/Cafeteria.wav')
-  const buttonPressAudioFireplace = new Audio('./audio/Lareira.wav')
+  const audioForrest = new Audio('./audio/Floresta.wav')
+  const audioRain = new Audio('./audio/Chuva.wav')
+  const audioCafeteria = new Audio('./audio/Cafeteria.wav')
+  const audioFireplace = new Audio('./audio/Lareira.wav')
 
   function resetAudio() {
-    buttonPressAudioCafeteria.pause()
-    buttonPressAudioRain.pause()
-    buttonPressAudioFireplace.pause()
-    buttonPressAudioForrest.pause()
+    audioCafeteria.pause()
+    audioRain.pause()
+    audioFireplace.pause()
+    audioForrest.pause()
   }
 
   function forrestAudioPlay() {
-    buttonPressAudioForrest.play()
+    audioForrest.play()
   }
   function rainAudioPlay() {
-    buttonPressAudioRain.play()
+    audioRain.play()
   }
   function cafeteriaAudioPlay() {
-    buttonPressAudioCafeteria.play()
+    audioCafeteria.play()
   }
   function fireplaceAudioPlay() {
-    buttonPressAudioFireplace.play()
+    audioFireplace.play()
   }
 
-  buttonPressAudioCafeteria.loop = true
-  buttonPressAudioRain.loop = true
-  buttonPressAudioFireplace.loop = true
-  buttonPressAudioForrest.loop = true
+  function setVolume() {
+    audioCafeteria.volume = 0.5
+    audioRain.volume = 0.5
+    audioFireplace.volume = 0.5
+    audioForrest.volume = 0.5
+  }
+
+
+  audioCafeteria.loop = true
+  audioRain.loop = true
+  audioFireplace.loop = true
+  audioForrest.loop = true
 
   return {
     resetAudio,
     forrestAudioPlay,
     rainAudioPlay,
     cafeteriaAudioPlay,
-    fireplaceAudioPlay
+    fireplaceAudioPlay,
+    audioCafeteria,
+    audioFireplace,
+    audioForrest,
+    audioRain,
+    setVolume
   }
 }

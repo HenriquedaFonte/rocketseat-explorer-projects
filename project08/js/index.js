@@ -15,7 +15,12 @@ import {
   buttonStop,
   initialMinutes,
   minutesDisplay,
-  secondsDisplay
+  secondsDisplay,
+  buttonDark,
+  buttonLight,
+  darkMode,
+  
+
 } from "./elements.js";
 
 
@@ -36,16 +41,12 @@ const controls = Controls({
   buttonPlay,
   buttonStop,
   buttonRain, 
+  buttonDark,
+  buttonLight,
+  darkMode,
+  
 })
 
 const sound = Sounds()
 
 Event({controls, timer, sound})
-
-
-
-
-
-
-
-

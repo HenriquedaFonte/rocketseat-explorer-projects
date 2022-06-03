@@ -1,4 +1,5 @@
-export default function Controls ({
+import { volumeCafeteria, volumeRain, volumeFireplace, volumeForrest } from "./elements.js"
+export default function Controls({
   buttonCafeteria,
   buttonFireplace,
   buttonForrest,
@@ -7,24 +8,30 @@ export default function Controls ({
   buttonRain,
   backgroundImage,
   minutesDisplay,
+  buttonDark,
+  buttonLight,
+  darkMode
+ 
   
-}){
+}) {
   function play() {
     buttonPlay.classList.add('hide')
-    buttonPause.classList.remove('hide')    
+    buttonPause.classList.remove('hide')
   }
 
   function pause() {
     buttonPlay.classList.remove('hide')
-    buttonPause.classList.add('hide')    
+    buttonPause.classList.add('hide')
   }
 
   function stop() {
     buttonPause.classList.add('hide')
-    buttonPlay.classList.remove('hide')    
+    buttonPlay.classList.remove('hide')
   }
 
-  function activeFireplace() {   
+
+  function activeFireplace() {
+    volumeFireplace.value = 0.5
     buttonForrest.classList.remove('active')
     buttonCafeteria.classList.remove('active')
     buttonFireplace.classList.toggle('active')
@@ -35,7 +42,8 @@ export default function Controls ({
     backgroundImage.classList.remove('clickedCafeteria')
   }
 
-  function activeForrest() {    
+  function activeForrest() {
+    volumeForrest.value = 0.5
     buttonForrest.classList.toggle('active')
     buttonCafeteria.classList.remove('active')
     buttonFireplace.classList.remove('active')
@@ -44,9 +52,10 @@ export default function Controls ({
     backgroundImage.classList.remove('clickedRain')
     backgroundImage.classList.remove('clickedFireplace')
     backgroundImage.classList.remove('clickedCafeteria')
-   }
+  }
 
-  function activeRain() {   
+  function activeRain() {
+    volumeRain.value = 0.5
     buttonForrest.classList.remove('active')
     buttonCafeteria.classList.remove('active')
     buttonFireplace.classList.remove('active')
@@ -55,10 +64,10 @@ export default function Controls ({
     backgroundImage.classList.remove('clickedForrest')
     backgroundImage.classList.remove('clickedFireplace')
     backgroundImage.classList.remove('clickedCafeteria')
-
   }
 
-  function activeCafeteria() {    
+  function activeCafeteria() {
+    volumeCafeteria.value = 0.5
     buttonForrest.classList.remove('active')
     buttonCafeteria.classList.toggle('active')
     buttonFireplace.classList.remove('active')
@@ -67,8 +76,20 @@ export default function Controls ({
     backgroundImage.classList.remove('clickedRain')
     backgroundImage.classList.remove('clickedForrest')
     backgroundImage.classList.remove('clickedFireplace')
-
   }
+
+  function setDark() {
+    buttonDark.classList.add('hide')
+    buttonLight.classList.remove('hide')
+    darkMode.classList.toggle('dark')
+  }
+
+  function setLight() {
+    buttonDark.classList.remove('hide')
+    buttonLight.classList.add('hide')
+    darkMode.classList.remove('dark')
+  }
+
 
   return {
     play,
@@ -78,7 +99,8 @@ export default function Controls ({
     activeFireplace,
     activeForrest,
     activeRain,
-    minutesDisplay
+    minutesDisplay,
+    setDark,
+    setLight
   }
-
- }
+}
