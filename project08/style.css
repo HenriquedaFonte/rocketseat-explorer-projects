@@ -251,11 +251,11 @@ button svg path {
 
 @media (max-width: 600px) {
   #page{
-    width: 70%;
+    width: 100%;
     justify-items: center;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
-    gap: 10rem;
+    gap: 5rem;
   }
 
   #sound {
@@ -265,6 +265,10 @@ button svg path {
   .changeMode {
     top: 3rem;
     right: 3rem;
+  }
+
+  body {
+    min-height: 70vh;
   }
 
 }
