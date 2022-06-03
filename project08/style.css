@@ -255,7 +255,7 @@ button svg path {
     justify-items: center;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
-    gap: 2rem;
+    gap: 0rem;
   }
 
   #sound {
@@ -263,12 +263,12 @@ button svg path {
   }
 
   .changeMode {
-    top: 3rem;
+    top: 1rem;
     right: 3rem;
   }
 
   body {
-    min-height: 50vh;
+    min-height: 52.5vh;
   }
 
 }
