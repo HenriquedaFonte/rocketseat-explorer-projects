@@ -17,6 +17,7 @@ A way to document my journey as a WebDev aspirer 🚀
 - Project 5: [Responsive website](./project05)
 - Project 6: [Responsive website W/Grid](./project06)
 - Project 7: [Focus timer - clock](./project07)
+- Project 7: [Focus timer 2.0 - clock](./project08)
 
 <br/>
 <br/>
