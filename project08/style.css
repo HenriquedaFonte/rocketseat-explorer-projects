@@ -13,6 +13,8 @@
   --secundary-color: hsl(0, 0%, 89%);
   --secundary-color-light: hsl(0, 0%, 100%);
   --btn-hover-color: hsl(194, 97%, 31%);
+  --shadow-color: rgb(41, 39, 39);
+
 
 }
 
@@ -61,7 +63,8 @@ button {
 .clickedForrest .timer,
 .clickedForrest .forrest svg path,
 .clickedForrest .controls svg path {
-  background-color: rgba(0, 0, 0, 0.582);
+  text-shadow: var(--shadow-color) 10px 10px 10px;
+  filter: drop-shadow( 0px 0px 5px black);
   color: var(--secundary-color-light);
   fill: var(--secundary-color-light);
 
@@ -82,7 +85,8 @@ button {
 .clickedRain .timer,
 .clickedRain .rain svg path,
 .clickedRain .controls svg path {
-  background-color: rgba(0, 0, 0, 0.582);
+  text-shadow: var(--shadow-color) 10px 10px 10px;
+  filter: drop-shadow( 0px 0px 5px black);
   color: var(--secundary-color-light);
   fill: var(--secundary-color-light);
 }
@@ -102,7 +106,8 @@ button {
 .clickedCafeteria .timer,
 .clickedCafeteria .cafeteria svg path,
 .clickedCafeteria .controls svg path {
-  background-color: rgba(0, 0, 0, 0.582);
+  text-shadow: var(--shadow-color) 10px 10px 10px;
+  filter: drop-shadow( 0px 0px 5px black);
   color: var(--secundary-color-light);
   fill: var(--secundary-color-light);
 }
@@ -122,9 +127,11 @@ button {
 .clickedFireplace .timer,
 .clickedFireplace .fireplace svg path,
 .clickedFireplace .controls svg path {
-  background-color: rgba(0, 0, 0, 0.582);
+  text-shadow: var(--shadow-color) 10px 10px 10px;
+  filter: drop-shadow( 0px 0px 5px black);
   color: var(--secundary-color-light);
   fill: var(--secundary-color-light);
+  
 }
 
 .clickedFireplace#page {
@@ -183,14 +190,20 @@ button {
   color: var(--font-color)
 }
 
+timer.span {
+  text-shadow: var(--shadow-color), 2px 3px 2px;
+}
+
 .controls svg path {
   fill: var(--font-color)
+  
 }
 
 .controls {
   display: flex;
   justify-content: space-between;
-
+  padding-left: 5px;
+  filter: drop-shadow( 0px 0px 5px black);
 }
 
 .controls button {
@@ -199,6 +212,8 @@ button {
   max-width: 4.8rem;
   max-height: 4.8rem;
 }
+
+
 
 /*==================================== SOUND ============================*/
 
@@ -250,7 +265,7 @@ button svg path {
 
 /*==================================== MEDIA ============================*/
 
-@media (max-width: 600px) {
+@media (max-width: 500px) {
   body {
     min-height: 58vh;
   }
