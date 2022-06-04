@@ -280,9 +280,13 @@ button svg path {
     gap: 0rem;
   }
 
+  #clock {
+    margin-left: 0rem;
+  }
+
   #sound {
     justify-self: center;
-    gap: 0.5rem;
+    gap: 4rem;
   }
 
   .changeMode {
