@@ -49,8 +49,8 @@
           fill="white" />
       </svg>
       <div class="search">
-        <input id="userSearch" type="text" placeholder="Enter the Github username you want to favorite">
-        <button>
+        <input id="userSearch" type="text" placeholder="Enter the Github username you want to favorite" required>
+        <button id="search">
           <svg id="favoritIcon" width="24" height="24" viewBox="0 0 24 24" fill="none"
             xmlns="http://www.w3.org/2000/svg">
             <path fill-rule="evenodd" clip-rule="evenodd"
@@ -61,19 +61,22 @@
         </button>
       </div>
     </header>
-    <table>
-      <thead>
-        <tr>
-          <th>User</th>
-          <th>Repositories</th>
-          <th>Followers</th>
-          <th>Action</th>
-        </tr>
-      </thead>      
+    <div class="teste">
+      <table>
+        <thead>
+          <tr>
+            <th>User</th>
+            <th>Repositories</th>
+            <th>Followers</th>
+            <th>Action</th>
+          </tr>
+        </thead>
         <tbody>
+        </tbody>
+      </table>
+    </div>
 
-        </tbody>     
-    </table> 
+
 </body>
 
 </html>
