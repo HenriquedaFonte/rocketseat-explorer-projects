@@ -4,13 +4,12 @@ export class Favorites {
     this.root = document.querySelector(root)
     this.load()
 
-    // const 
+    // const
     // await GithubUser.search(value)
   }
 
   load() {
     this.entries = JSON.parse(localStorage.getItem('@github-favorites:')) || []
-     
   }
 
   save() {
@@ -20,30 +19,30 @@ export class Favorites {
   async add(userName) {
     try {
       const userExist = this.entries.find(entry => entry.login === userName)
-      
+
       if (userExist) {
         throw new Error('This user is already registered')
       }
-      
+
       const user = await GithubUser.search(userName)
       if (user.login === undefined) {
-      throw new Error('User not found!!')      
-    }
+        throw new Error('User not found!!')
+      }
 
-    this.entries = [user, ...this.entries]
-    this.update()
-    this.save()
-    this.resetInput()
-
-    } catch(error){
+      this.entries = [user, ...this.entries]
+      this.update()
+      this.save()
+      this.resetInput()
+    } catch (error) {
       alert(error.message)
       this.resetInput()
     }
-
   }
 
   deleteRow(user) {
-    const filteredEntries = this.entries.filter(entry => entry.login !== user.login)
+    const filteredEntries = this.entries.filter(
+      entry => entry.login !== user.login
+    )
     this.entries = filteredEntries
     this.save()
     this.update()
@@ -73,27 +72,29 @@ export class FavoritesView extends Favorites {
   update() {
     this.removeAllTr()
 
-    this.entries.forEach( user => {
+    this.entries.forEach(user => {
       const row = this.createRow()
       row.querySelector('.user img').src = `http://github.com/${user.login}.png`
       row.querySelector('.user img').alt = `${user.name} profile image`
       row.querySelector('.user a').href = `http://github.com/${user.login}`
-      row.querySelector('.user p').textContent = user.name        
-      row.querySelector('.user span').textContent = user.login        
-      row.querySelector('.repo').textContent = user.public_repos        
+      row.querySelector('.user p').textContent = user.name
+      row.querySelector('.user span').textContent = user.login
+      row.querySelector('.repo').textContent = user.public_repos
       row.querySelector('.followers').textContent = user.followers
 
-      row.querySelector('.delete').onclick = () =>{
-         const confirmed = confirm(`Are you sure you want to remove ${user.name}?`)
-         if(confirmed) {
-           this.deleteRow(user) 
-         }
-      }          
-      this.tbody.append(row)   
+      row.querySelector('.delete').onclick = () => {
+        const confirmed = confirm(
+          `Are you sure you want to remove ${user.name}?`
+        )
+        if (confirmed) {
+          this.deleteRow(user)
+        }
+      }
+      this.tbody.append(row)
     })
 
-    if (this.entries.length === 0){
-      const tr = document.createElement('tr');
+    if (this.entries.length === 0) {
+      const tr = document.createElement('tr')
       tr.innerHTML = `
               <td colspan="4" style="border: 0px solid transparent; height: 40vh; ">
                   <div class="empty">
@@ -104,7 +105,7 @@ export class FavoritesView extends Favorites {
                   </div>
               </td>
       `
-      this.tbody.append(tr);
+      this.tbody.append(tr)
     }
   }
 
@@ -126,7 +127,7 @@ export class FavoritesView extends Favorites {
       100
     </td>
     <td class="action">
-      <button class="delete">Remover</button>
+      <button class="delete">Delete</button>
     </td>
      `
     return tr
@@ -134,18 +135,17 @@ export class FavoritesView extends Favorites {
 
   removeAllTr() {
     this.tbody.querySelectorAll('tr').forEach(tr => {
-      tr.remove() 
-          
+      tr.remove()
     })
   }
 
   resetInput() {
-    this.root.querySelector('.search input').value = ""    
+    this.root.querySelector('.search input').value = ''
   }
 
-  keyPressed(){
-    this.root.addEventListener("keypress", (event) => {
-      if(event.key === "Enter"){
+  keyPressed() {
+    this.root.addEventListener('keypress', event => {
+      if (event.key === 'Enter') {
         const btn = this.root.querySelector('#search')
         btn.click()
       }
