@@ -19,6 +19,7 @@ A way to document my journey as a WebDev aspirer 🚀
 - Project 7: [Focus timer - clock](./project07)
 - Project 8: [Focus timer 2.0 - clock](./project08)
 - Project 9: [Favorites - Github API](./project09)
+- Project 10: [API NodesJS](./project10)
 
 <br/>
 <br/>
@@ -28,10 +29,11 @@ A way to document my journey as a WebDev aspirer 🚀
 
 #### Status: 🚧 In progress
 
-<p style="color:#381480"> █████▁▁▁▁ &nbsp;50% </p>
+<p style="color:#381480"> ██████▁▁▁ &nbsp;60% </p>
 
 #### 🧰 Stacks practised
 
-<img src="https://img.shields.io/badge/Css3-374449?style=flat&logo=css3" alt="css3 Badge" height="25">&nbsp;
-<img src="https://img.shields.io/badge/Html5-374449?style=flat&logo=html5" alt="html5 Badge" height="25">&nbsp;
-<img src="https://img.shields.io/badge/Javascript-374449?style=flat&logo=javascript" alt="javascript Badge" height="25">&nbsp;
+
+<img src="https://skillicons.dev/icons?i=js,html,css,nodejs&theme=light" alt="javascript Badge" height="50">&nbsp;
+
+
