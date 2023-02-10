@@ -19,6 +19,8 @@ A way to document my journey as a WebDev aspirer 🚀
 - Project 7: [Focus timer - clock](./project07)
 - Project 8: [Focus timer 2.0 - clock](./project08)
 - Project 9: [Favorites - Github API](./project09)
+- Project 10: [FoodReview API](./project10)
+- Project 12: [FoodReview ](./project12)
 
 <br/>
 <br/>
@@ -28,7 +30,7 @@ A way to document my journey as a WebDev aspirer 🚀
 
 #### Status: 🚧 In progress
 
-<p style="color:#381480"> █████▁▁▁▁ &nbsp;50% </p>
+<p style="color:#381480"> ██████████ &nbsp;100% </p>
 
 #### 🧰 Stacks practised
 
